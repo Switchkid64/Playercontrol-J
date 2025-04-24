@@ -7,6 +7,7 @@ public class PlayerControllerX : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float verticalInput;
+    public float spinPropellerZ
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +26,8 @@ public class PlayerControllerX : MonoBehaviour
 
         // tilt the plane up/down based on up/down arrow keys
         transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime * verticalInput);
+
+        //propellers will propel
+        transform.Rotate()
     }
 }
